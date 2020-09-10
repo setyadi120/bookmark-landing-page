@@ -1,0 +1,38 @@
+@use 'variables';
+
+.contact-section {
+  position: absolute;
+  left: 0;
+  padding: 70px 0 40px;
+  background-color: variables.$soft-blue;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.member-joined {
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-input {
+  display: block;
+  width: 90vw;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.contact-form button {
+  font-family: "Rubik", sans-serif;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
