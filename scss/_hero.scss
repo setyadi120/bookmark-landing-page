@@ -1,0 +1,23 @@
+@use 'variables';
+
+.hero-section {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.hero-img {
+  width: 100%;
+}
+.hero-bg {
+  width: 80vw;
+  height: 200px;
+  position: absolute;
+  right: 0;
+  top: 160px;
+  z-index: -1;
+  background-color: variables.$soft-blue;
+  border-bottom-left-radius: 50%;
+}
+.hero-text {
+  margin-top: 40px;
+  text-align: center;
+}
