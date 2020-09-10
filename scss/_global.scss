@@ -21,7 +21,7 @@ li {
 }
 svg,
 img {
-  max-width: 50vw;
+  max-width: 90vw;
 }
 .btn {
   border-radius: 5px;
@@ -46,4 +46,17 @@ img {
 .btn-danger {
   background-color: variables.$soft-red;
   color: #fff;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+p {
+  color: rgb(124, 124, 124);
 }
