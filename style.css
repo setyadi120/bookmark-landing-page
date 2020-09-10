@@ -354,4 +354,43 @@ p {
   margin-bottom: 20px;
 }
 
+.faq-section {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.faq-contents {
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  text-align: left;
+}
+
+.faq-answer.show {
+  display: block;
+}
+
+.arrow-transform {
+  transform: rotateX(-180deg);
+}
+
+.arrow-transform path {
+  stroke: #fa5757;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -49,3 +49,16 @@ tabs.forEach((tab) => {
     document.getElementById(dataTarget).classList.add("show");
   });
 });
+
+// faq
+let faqToggles = document.querySelectorAll(".faq-item");
+
+faqToggles.forEach((faqToggle) => {
+  faqToggle.addEventListener("click", () => {
+    // toggle show answer
+    faqToggle.lastElementChild.classList.toggle("show");
+
+    //toggle arrow icon
+    faqToggle.firstElementChild.children[1].classList.toggle("arrow-transform");
+  });
+});
