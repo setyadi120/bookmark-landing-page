@@ -40,7 +40,6 @@ img {
   background-color: rgb(233, 233, 233);
   color: variables.$very-dark-blue;
   -webkit-box-shadow: -1px 13px 12px -16px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 13px 12px -16px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 13px 12px -16px rgba(0, 0, 0, 0.75);
 }
 .btn-danger {
@@ -50,14 +49,22 @@ img {
 h1 {
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 h2 {
   font-size: 26px;
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 p {
   color: rgb(124, 124, 124);
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
