@@ -80,12 +80,17 @@
         Your bookmarks sync between your devices so you can access them on the go.
       </p>
       <div class="feature-tabs">
-        <button class="tab-links active" data-target="bookmark">Simple Bookmarking</button>
-        <button class="tab-links">Speedy Searching</button>
-        <button class="tab-links">Easy Sharing</button>
+        <hr style="width: 90vw;color: rgb(230, 230, 230);">
+        <button class="btn tab-links active" data-target="bookmark">Simple Bookmarking</button>
+        <hr style="width: 90vw;color: rgb(230, 230, 230);">
+        <button class="btn tab-links" data-target="intelligent">Speedy Searching</button>
+        <hr style="width: 90vw;color: rgb(230, 230, 230);">
+        <button class="btn tab-links" data-target="share">Easy Sharing</button>
+        <hr style="width: 90vw;color: rgb(230, 230, 230);">
         <section class="tab-contents">
-          <div class="tab-item show">
+          <div id="bookmark" class="tab-item show">
             <div class="tab-img">
+              <div class="feature-``bg"></div>
               <img src="./images/illustration-features-tab-1.svg" alt="Bookmark in one click">
             </div>
             <h2 class="tab-title">Bookmark in one click</h2>
@@ -95,7 +100,7 @@
             </p>
             <button class="btn btn-primary">More Info</button>
           </div>
-          <div class="tab-item">
+          <div id="intelligent" class="tab-item">
             <div class="tab-img">
               <img src="./images/illustration-features-tab-2.svg" alt="Intelligent search">
             </div>
@@ -106,7 +111,7 @@
             </p>
             <button class="btn btn-primary"> More Info</button>
           </div>
-          <div class="tab-item">
+          <div class="tab-item" id="share">
             <div class="tab-img">
               <img src="./images/illustration-features-tab-3.svg" alt="Share your bookmarks">
             </div>

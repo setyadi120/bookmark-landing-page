@@ -1,3 +1,4 @@
+//navigation menu
 let menuToggle = document.querySelector(".nav-toggler");
 menuToggle.addEventListener("click", () => {
   let navLinks = document.querySelector(".nav-links");
@@ -27,4 +28,24 @@ menuToggle.addEventListener("click", () => {
     logoCircle.style.fill = "#5267DF";
     logoFill.style.fill = "#ffffff";
   }
+});
+
+// tabs
+let tabs = document.querySelectorAll(".tab-links");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    let dataTarget = tab.attributes["data-target"].nodeValue;
+
+    // remove .active
+    document.querySelector(".tab-links.active").classList.remove("active");
+
+    // add .active on clicked tab
+    tab.classList.add("active");
+
+    // remove current .show
+    document.querySelector(".show").classList.remove("show");
+
+    // show targeted element
+    document.getElementById(dataTarget).classList.add("show");
+  });
 });

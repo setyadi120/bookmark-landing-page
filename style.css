@@ -238,7 +238,7 @@ p {
   width: 80vw;
 }
 
-hr:first-child {
+.nav-links hr:first-child {
   margin-top: 100px;
 }
 
@@ -293,6 +293,41 @@ hr:first-child {
 .hero-text {
   margin-top: 40px;
   text-align: center;
+}
+
+.feature-section {
+  text-align: center;
+}
+
+.feature-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-links {
+  background-color: #fff;
+  font-size: 18px;
+  color: #535353;
+}
+
+.tab-links.active::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 15px;
+  left: 36%;
+  width: 27%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #fa5757;
+}
+
+.tab-item {
+  display: none;
+}
+
+.tab-item.show {
+  display: inline;
 }
 
 /*# sourceMappingURL=style.css.map */
