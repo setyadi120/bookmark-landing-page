@@ -38,13 +38,17 @@ hr:first-child {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 5 px;
+  letter-spacing: 5px;
 }
 .nav-item.cta {
   margin-top: 20px;
   border-radius: 8px;
   border: 2px solid #fff;
   font-weight: 600;
+}
+.nav-item.cta a:hover {
+  color: variables.$very-dark-blue;
+  background-color: #fff;
 }
 .navbar {
   .active {
