@@ -1,0 +1,57 @@
+@use 'variables';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+.logo {
+  z-index: 102;
+}
+.nav-links {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 101;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  background-color: variables.$very-dark-blue;
+  color: #fff;
+}
+.nav-item:first-child {
+  margin-top: 150px;
+}
+.nav-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // border-top: 0.5px solid variables.$grayish-blue;
+  width: 80vw;
+}
+hr:first-child {
+  margin-top: 100px;
+}
+.nav-item a {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5 px;
+}
+.nav-item.cta {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  font-weight: 600;
+}
+.navbar {
+  .active {
+    display: flex;
+  }
+}
+.nav-toggler {
+  cursor: pointer;
+  z-index: 102;
+}

@@ -1,0 +1,25 @@
+@use 'variables';
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: variables.$font-stack;
+}
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  padding-left: variables.$container-padding;
+  padding-right: variables.$container-padding;
+  margin-left: auto;
+  margin-right: auto;
+}
+svg,
+img {
+  max-width: 50vw;
+}
