@@ -135,6 +135,7 @@ table {
 
 body {
   font-family: "Rubik", sans-serif;
+  position: relative;
 }
 
 a {
@@ -166,6 +167,7 @@ img {
   padding-left: 20px;
   border: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -211,11 +213,26 @@ p {
   margin-bottom: 15px;
 }
 
+.bg-dark {
+  background-color: #252b46;
+  width: 100%;
+}
+
+.bg-blue {
+  background-color: #5368df;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 80px;
+  overflow: hidden;
+}
+
+.nav-links .active {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .logo {
@@ -226,14 +243,19 @@ p {
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
   width: 100%;
   z-index: 101;
   display: none;
   align-items: center;
   flex-direction: column;
-  background-color: #252b46;
+  background-color: rgba(37, 43, 70, 0.97);
   color: #fff;
+}
+
+.nav-links.active {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .nav-item:first-child {
@@ -257,20 +279,17 @@ p {
   letter-spacing: 5px;
 }
 
-.nav-item.cta {
-  margin-top: 20px;
+.nav-item.cta a {
+  margin-top: 15px;
+  padding: 20px;
   border-radius: 8px;
   border: 2px solid #fff;
   font-weight: 600;
 }
 
 .nav-item.cta a:hover {
-  color: #252b46;
+  color: rgba(37, 43, 70, 0.97);
   background-color: #fff;
-}
-
-.navbar .active {
-  display: flex;
 }
 
 .nav-toggler {
@@ -349,11 +368,6 @@ p {
   padding-bottom: 25px;
 }
 
-.img-dots {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
 .faq-section {
   text-align: center;
   margin-top: 50px;
@@ -396,6 +410,8 @@ p {
 .contact-section {
   position: absolute;
   left: 0;
+  right: 0;
+  height: 350px;
   padding: 70px 0 40px;
   background-color: #5368df;
   display: flex;
@@ -424,7 +440,6 @@ p {
   border: none;
   padding: 20px;
   margin-bottom: 20px;
-  position: relative;
 }
 
 .contact-form button {
@@ -432,6 +447,36 @@ p {
   padding: 15px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  bottom: -700px;
+  width: 100%;
+  z-index: 104;
+  padding: 40px;
+  background-color: #252b46;
+}
+
+.footer svg {
+  display: block;
+  margin: auto;
+}
+
+.footer-nav .nav-item {
+  color: #ffffff;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links svg:first-child {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

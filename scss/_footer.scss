@@ -1,0 +1,27 @@
+@use 'variables';
+
+.footer {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  bottom: -700px;
+  width: 100%;
+  z-index: 104;
+  padding: 40px;
+  background-color: variables.$very-dark-blue;
+}
+.footer svg {
+  display: block;
+  margin: auto;
+}
+.footer-nav .nav-item {
+  color: #ffffff;
+  margin: 0;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+.social-links svg:first-child {
+  margin-right: 20px;
+}

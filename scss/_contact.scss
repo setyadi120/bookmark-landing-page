@@ -3,6 +3,8 @@
 .contact-section {
   position: absolute;
   left: 0;
+  right: 0;
+  height: 350px;
   padding: 70px 0 40px;
   background-color: variables.$soft-blue;
   display: flex;
@@ -28,7 +30,6 @@
   border: none;
   padding: 20px;
   margin-bottom: 20px;
-  position: relative;
 }
 .contact-form button {
   font-family: "Rubik", sans-serif;
