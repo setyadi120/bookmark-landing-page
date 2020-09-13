@@ -16,11 +16,13 @@
 }
 .footer-nav .nav-item {
   color: #ffffff;
-  margin: 0;
+  margin: auto;
 }
 .social-links {
+  width: 20%;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .social-links svg:first-child {
   margin-right: 20px;

@@ -49,6 +49,9 @@
   text-transform: uppercase;
   letter-spacing: 5px;
 }
+.nav-item a:hover {
+  text-decoration: underline;
+}
 .nav-item.cta a {
   margin-top: 15px;
   padding: 20px;
@@ -57,6 +60,7 @@
   font-weight: 600;
 }
 .nav-item.cta a:hover {
+  text-decoration: none;
   color: variables.$transparent-dark-blue;
   background-color: #fff;
 }

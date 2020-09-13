@@ -11,6 +11,7 @@
 }
 .faq-item {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 .faq-question {
   display: flex;
@@ -21,7 +22,6 @@
 }
 .faq-answer {
   display: none;
-  text-align: left;
 }
 .faq-answer.show {
   display: block;
