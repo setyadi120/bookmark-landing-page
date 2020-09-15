@@ -1,11 +1,16 @@
 @use 'variables';
 
 .feature-section {
+  grid-area: feature;
   text-align: center;
 }
 .feature-tabs {
   display: flex;
   flex-direction: column;
+}
+.feature-tabs hr {
+  width: 90vw;
+  color: rgb(230, 230, 230);
 }
 .tab-links {
   background-color: #fff;
@@ -19,9 +24,8 @@
   height: 15px;
   left: 36%;
   width: 27%;
-  margin-left: auto;
-  margin-right: auto;
-  // border-bottom-width: 10px;
+  // margin-left: auto;
+  // margin-right: auto;
   border-bottom: 3px solid variables.$soft-red;
 }
 .tab-item {
@@ -30,5 +34,39 @@
 .tab-item.show {
   display: inline;
 }
-.feature-bg {
+@media only screen and (min-width: variables.$md-breakpoint) {
+  .feature-description {
+    width: 40%;
+    margin: auto;
+  }
+  .feature-tabs hr {
+    display: none;
+  }
+  .tab-button {
+    // display: flex;
+    // justify-content: space-between;
+  }
+  .tab-contents {
+    display: flex;
+    flex-direction: row;
+  }
+  .tab-links.active::after {
+    width: 20%;
+  }
+  .tab-item.show {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  .tab-text {
+    margin: auto;
+    width: 50%;
+  }
+  .tab-img {
+    width: 50%;
+  }
+  .tab-img img {
+    width: 35vw;
+  }
 }

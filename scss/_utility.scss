@@ -1,0 +1,88 @@
+@use 'variables';
+
+// button
+.btn {
+  border-radius: 5px;
+  padding: 10px 10px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: variables.$soft-blue;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid variables.$soft-blue;
+  color: variables.$soft-blue;
+}
+.btn-secondary {
+  background-color: rgb(233, 233, 233);
+  color: variables.$very-dark-blue;
+  -webkit-box-shadow: -1px 13px 12px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 13px 12px -16px rgba(0, 0, 0, 0.75);
+}
+.btn-secondary:hover {
+  background-color: transparent;
+  border: 1px solid variables.$soft-red;
+  color: variables.$soft-red;
+}
+
+// background
+.btn-danger {
+  background-color: variables.$soft-red;
+  color: #fff;
+}
+.bg-dark {
+  background-color: variables.$very-dark-blue;
+}
+.bg-blue {
+  background-color: variables.$soft-blue;
+}
+
+// text role
+.text-title {
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.text-subtitle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.text-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.text-bold {
+  font-weight: 500;
+}
+
+// text size
+h1.text-title {
+  font-size: 32px;
+}
+h2.text-title {
+  font-size: 28px;
+}
+h3.text-subtitle {
+  font-size: 18px;
+}
+p.text-subtitle {
+  font-size: 16px;
+}
+p.text-description {
+  font-size: 14px;
+}
+
+// text color
+.text-primary {
+  color: variables.$text-primary-color;
+}
+.text-secondary {
+  color: variables.$text-secondary-color;
+}
+.text-light {
+  color: variables.$text-light-color;
+}

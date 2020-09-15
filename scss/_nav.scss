@@ -1,6 +1,8 @@
 @use 'variables';
 
 .navbar {
+  padding-left: variables.$sm-content-padding;
+  padding-right: variables.$sm-content-padding;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,11 +42,14 @@
   // border-top: 0.5px solid variables.$grayish-blue;
   width: 80vw;
 }
+.nav-links hr {
+  display: block;
+}
 .nav-links hr:first-child {
   margin-top: 100px;
 }
 .nav-item a {
-  display: block;
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -67,4 +72,58 @@
 .nav-toggler {
   cursor: pointer;
   z-index: 102;
+}
+
+@media only screen and (min-width: variables.$md-breakpoint) {
+  .navbar {
+    padding-left: variables.$md-content-padding;
+    padding-right: variables.$md-content-padding;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .nav-links {
+    width: 50vw;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    color: #000;
+  }
+  .nav-item {
+    padding-top: 0;
+    padding-bottom: 0;
+    // border-top: 0.5px solid variables.$grayish-blue;
+    width: 100%;
+  }
+  .nav-item a {
+    letter-spacing: 1px;
+  }
+  .nav-item:first-child {
+    margin: 0;
+  }
+  .nav-links hr {
+    display: none;
+  }
+  .nav-links hr {
+    margin: 0;
+  }
+  .nav-toggler {
+    display: none;
+  }
+  .nav-item.cta a {
+    margin-top: 0;
+    margin-right: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 400;
+    background-color: variables.$soft-red;
+  }
+  .nav-item.cta a:hover {
+    text-decoration: none;
+    color: variables.$soft-red;
+    background-color: #fff;
+    border: 1px solid variables.$soft-red;
+  }
 }

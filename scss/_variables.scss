@@ -4,14 +4,22 @@ $font-stack: "Rubik", sans-serif;
 // color
 $soft-blue: hsl(231, 69%, 60%);
 $soft-red: hsl(0, 94%, 66%);
+$text-primary-color: #292424;
+$text-secondary-color: #7c7c7c;
+$text-light-color: #ffffff;
 
 $grayish-blue: hsl(229, 8%, 60%);
 $very-dark-blue: hsl(229, 31%, 21%);
 $transparent-dark-blue: hsla(229, 31%, 21%, 0.97);
 
 // global
-$container-padding: 20px;
-$horizontal-gap: 50px;
 
-// media queries
+// content-padding
+$sm-content-padding: 20px; // mobile content
+$md-content-padding: 60px; // tablet-desktop
+// row gap
+$sm-row-gap: 50px; // mobile
+$md-row-gap: 70px; // tablet-desktop
+
+// responsive variables
 $md-breakpoint: 768px;

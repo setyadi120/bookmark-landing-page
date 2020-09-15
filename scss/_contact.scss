@@ -1,31 +1,15 @@
 @use 'variables';
 
 .contact-section {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 350px;
-  padding: 70px 0 40px;
-  background-color: variables.$soft-blue;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  grid-area: contact;
+  padding: 70px variables.$sm-content-padding 40px;
+  margin-bottom: -(variables.$sm-row-gap);
   text-align: center;
-  color: #fff;
-}
-.member-joined {
-  letter-spacing: 3px;
-  font-size: 14px;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
 }
 .contact-input {
   display: block;
-  width: 90vw;
   height: 50px;
+  width: 100%;
   border-radius: 5px;
   border: none;
   padding: 20px;
@@ -36,4 +20,35 @@
   padding: 15px;
   font-size: 16px;
   font-weight: 600;
+}
+@media only screen and (min-width: variables.$md-breakpoint) {
+  .contact-section {
+    padding-left: variables.$md-content-padding;
+    padding-right: variables.$md-content-padding;
+    margin-bottom: (-(variables.$md-row-gap));
+  }
+  .contact-section > * {
+    width: 35%;
+    margin: auto;
+  }
+  .contact-section h4 {
+    margin-bottom: 40px;
+  }
+  .contact-section h2 {
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-input {
+    width: 65%;
+    margin: auto;
+  }
+  .contact-form button {
+    width: 28%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }

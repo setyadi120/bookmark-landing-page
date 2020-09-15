@@ -1,3 +1,5 @@
+@use 'variables';
+
 html,
 body,
 div,
@@ -121,4 +123,34 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+// svg,
+// img {
+//   max-width: 80vw;
+// }
+
+input,
+input:focus {
+  border: 1px solid transparent;
+}
+input:invalid,
+input:invalid:focus {
+  border: 1px solid variables.$soft-red;
+}
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+li {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: variables.$font-stack;
+  // position: relative;
+  width: 100vw;
+  height: auto;
+  // overflow-x: hidden;
 }

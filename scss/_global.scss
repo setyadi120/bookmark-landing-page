@@ -1,95 +1,25 @@
 @use 'variables';
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: variables.$font-stack;
-  position: relative;
-}
-a {
-  color: inherit;
-  text-decoration-line: none;
-}
-li {
-  list-style: none;
-}
 
 .container {
-  padding-left: variables.$container-padding;
-  padding-right: variables.$container-padding;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  // padding-left: variables.$sm-content-padding;
+  // padding-right: variables.$sm-content-padding;
+  // margin-left: auto;
+  // margin-right: auto;
+  display: grid;
+  row-gap: variables.$sm-row-gap;
+  grid-template-areas:
+    ". hero hero"
+    ". feature ."
+    ". download ."
+    ". faq ."
+    "contact contact contact"
+    "footer footer footer";
+  grid-template-columns: variables.$sm-content-padding minmax(0, 1fr) variables.$sm-content-padding;
 }
-svg,
-img {
-  max-width: 90vw;
-}
-.btn {
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border: 1px solid transparent;
-  font-weight: 600;
-  cursor: pointer;
-}
-.btn-primary {
-  background-color: variables.$soft-blue;
-  color: #fff;
-}
-.btn-primary:hover {
-  background-color: transparent;
-  border: 1px solid variables.$soft-blue;
-  color: variables.$soft-blue;
-}
-.btn-secondary {
-  background-color: rgb(233, 233, 233);
-  color: variables.$very-dark-blue;
-  -webkit-box-shadow: -1px 13px 12px -16px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 13px 12px -16px rgba(0, 0, 0, 0.75);
-}
-.btn-secondary:hover {
-  background-color: transparent;
-  border: 1px solid variables.$soft-red;
-  color: variables.$soft-red;
-}
-.btn-danger {
-  background-color: variables.$soft-red;
-  color: #fff;
-}
-h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-h2 {
-  font-size: 26px;
-  font-weight: 500;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-h3 {
-  font-weight: 500;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-p {
-  color: rgb(124, 124, 124);
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.bg-dark {
-  background-color: variables.$very-dark-blue;
-}
-.bg-blue {
-  background-color: variables.$soft-blue;
-}
-input {
-  border: 1px solid transparent;
-}
-input:invalid,
-input:invalid:focus {
-  border: 1px solid variables.$soft-red;
+@media only screen and (min-width: variables.$md-breakpoint) {
+  .container {
+    row-gap: variables.$md-row-gap;
+    grid-template-columns: variables.$md-content-padding minmax(0, 1fr) variables.$md-content-padding;
+  }
 }

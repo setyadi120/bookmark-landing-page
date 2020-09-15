@@ -1,23 +1,54 @@
 @use 'variables';
 
 .hero-section {
-  margin-top: 50px;
-  margin-bottom: 70px;
+  grid-area: hero;
+  text-align: center;
 }
 .hero-img {
-  width: 100%;
+  position: relative;
+}
+.hero-img img {
+  width: 85vw;
 }
 .hero-bg {
-  width: 80vw;
-  height: 55vw;
   position: absolute;
   right: 0;
-  top: 160px;
+  margin-top: 100px;
   z-index: -1;
+  width: 80%;
+  height: 70%;
   background-color: variables.$soft-blue;
-  border-bottom-left-radius: 50%;
+  border-bottom-left-radius: 30%;
 }
-.hero-text {
-  margin-top: 40px;
-  text-align: center;
+@media only screen and (min-width: variables.$md-breakpoint) {
+  .hero-section {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  .hero-text {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  .hero-text > * {
+    width: 80%;
+  }
+  .hero-bg {
+    margin-top: 0%;
+    top: 15%;
+    bottom: 0;
+    height: 80%;
+  }
+  .hero-img {
+    overflow: hidden;
+    width: 50%;
+  }
+  .hero-img img {
+    width: 45vw;
+    margin: auto;
+  }
 }

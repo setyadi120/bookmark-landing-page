@@ -1,10 +1,8 @@
 @use 'variables';
 
 .faq-section {
-  // position: absolute;
+  grid-area: faq;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 80px;
 }
 .faq-contents {
   margin-bottom: 40px;
@@ -27,8 +25,14 @@
   display: block;
 }
 .arrow-transform {
-  transform: rotateX(-180deg);
+  transform: rotateX(180deg);
 }
 .arrow-transform path {
   stroke: variables.$soft-red;
+}
+@media only screen and (min-width: variables.$md-breakpoint) {
+  .faq-section {
+    width: 50%;
+    margin: auto;
+  }
 }
